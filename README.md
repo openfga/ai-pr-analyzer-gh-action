@@ -2,7 +2,8 @@
 
 A GitHub Actions workflow that provides AI-powered code reviews using Claude via Amazon Bedrock. Automatically analyze pull requests and provide intelligent feedback when triggered by mentioning `@claude` in PR comments or descriptions.
 
-## Key Features
+## About
+### Key Features
 
 - **AI-Powered Code Reviews**: Leverages Claude AI through Amazon Bedrock for intelligent code analysis
 - **Inline Comments**: Provides line-specific feedback directly in GitHub pull requests
@@ -11,6 +12,11 @@ A GitHub Actions workflow that provides AI-powered code reviews using Claude via
 - **Clean PR Experience**: Automatically hides outdated bot reviews to keep PRs focused
 - **OIDC Authentication**: Secure AWS authentication without long-lived credentials
 - **Trigger-Based**: Only runs when explicitly requested via `@claude` mentions
+
+## Resources
+
+- [Shared Worfklow](https://github.com/openfga/ai-pr-analyzer-gh-action)
+- [Claude Code Github Actions](https://docs.anthropic.com/en/docs/claude-code/github-actions)
 
 ## Installation
 
@@ -107,3 +113,15 @@ jobs:
 ```
 
 For more information on using the `disallowed_tools` parameter, check the [Claude Code documentation](https://github.com/anthropics/claude-code-action/blob/main/docs/configuration.md#custom-tools).
+
+## Contributing
+
+See [CONTRIBUTING](https://github.com/openfga/.github/blob/main/CONTRIBUTING.md).
+
+## Author
+
+[OpenFGA](https://github.com/openfga)
+
+## License
+
+This project is licensed under the Apache-2.0 license. See the [LICENSE](https://github.com/openfga/cli/blob/main/LICENSE) file for more info.
