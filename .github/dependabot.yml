@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # Monitor Github Actions workflow dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    reviewers:
+      - "openfga/maintainers"
+    assignees:
+      - "openfga/maintainers"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    open-pull-requests-limit: 10
+    # Group all Github Actions updates into a single PR when possible
+    groups:
+      github-actions:
+        patterns:
+          - "*"
