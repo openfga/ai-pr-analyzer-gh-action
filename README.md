@@ -1,6 +1,8 @@
 # AI PR Analyzer GitHub Action
 
-A GitHub Actions workflow that provides AI-powered code reviews using Claude via Amazon Bedrock. Automatically analyze pull requests and provide intelligent feedback when triggered by mentioning `@claude` in PR comments or descriptions.
+A GitHub Actions workflow that provides AI-powered code reviews using Claude via Amazon Bedrock for OpenFGA repositories. Automatically analyze pull requests and provide intelligent feedback when triggered by mentioning `@claude` in PR comments or descriptions.
+
+This repository is maintained by Okta and open sourced so it can be used from OpenFGA's github actions. It does not serve any other purpose and we do not expect contributions.
 
 ## About
 ### Key Features
